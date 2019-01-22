@@ -1,7 +1,7 @@
 spring:
   data:
     mongodb:
-      uri: "mongodb://mongodb/test"
+      uri: "mongodb://mongodb/test?serverSelectionTimeoutMS=5000&connectTimeoutMS=5000"
 custom:
   external:
     cron: "* * * ? * *"
