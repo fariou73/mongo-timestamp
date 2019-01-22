@@ -1,0 +1,10 @@
+spring:
+  data:
+    mongodb:
+      uri: "mongodb://mongodb/test"
+custom:
+  external:
+    cron: "* * * ? * *"
+    pageSize: 20
+  message:
+    connectionUnreachable: "Соединение с базой данных недоступно"
