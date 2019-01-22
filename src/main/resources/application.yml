@@ -12,3 +12,4 @@ custom:
 logging:
   level:
     root: ERROR
+    org.mongo.timestamp.controller: INFO
