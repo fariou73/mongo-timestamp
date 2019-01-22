@@ -1,10 +1,11 @@
 spring:
   data:
     mongodb:
-      uri: "mongodb://mongodb/test?serverSelectionTimeoutMS=5000&connectTimeoutMS=5000"
+      uri: "mongodb://mongodb/test?serverSelectionTimeoutMS=900"
 custom:
   external:
     cron: "* * * ? * *"
+    flushCron: "*/5 * * ? * *"
     pageSize: 20
   message:
     connectionUnreachable: "Соединение с базой данных недоступно"

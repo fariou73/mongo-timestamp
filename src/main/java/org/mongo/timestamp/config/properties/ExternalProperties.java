@@ -6,4 +6,5 @@ import lombok.Data;
 public class ExternalProperties {
     private int pageSize = 20;
     private String cron;
+    private String flushCron;
 }

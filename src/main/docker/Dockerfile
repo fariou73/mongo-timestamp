@@ -1,10 +1,9 @@
 FROM openjdk:8-jre-alpine
 
 ENV SPRING_OUTPUT_ANSI_ENABLED=ALWAYS \
-    JHIPSTER_SLEEP=0 \
     JAVA_OPTS=""
 
 CMD echo "The application starting.." && \
-    java ${JAVA_OPTS} -Djava.security.egd=file:/dev/./urandom -jar /app.jar
+    java -Djava.security.egd=file:/dev/./urandom -jar /app.jar ${JAVA_OPTS}
 
 ADD *.jar /app.jar

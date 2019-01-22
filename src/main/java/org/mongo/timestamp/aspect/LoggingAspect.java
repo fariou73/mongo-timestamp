@@ -25,8 +25,8 @@ public class LoggingAspect {
      * @param joinPoint join point for advice
      * @param e exception
      */
-    @AfterThrowing(pointcut = "mongoWriteBeanPointcut()", throwing = "e")
-    public void logAfterThrowing(JoinPoint joinPoint, Throwable e) {
+    @AfterThrowing(pointcut = "mongoWriteBeanPointcut()", throwing = "error")
+    public void logAfterThrowing(JoinPoint joinPoint, Throwable error) {
         log.error(applicationProperties.getMessage().getConnectionUnreachable());
     }
 }

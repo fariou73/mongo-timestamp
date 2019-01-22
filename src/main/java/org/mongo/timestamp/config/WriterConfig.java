@@ -1,6 +1,7 @@
 package org.mongo.timestamp.config;
 
 import org.mongo.timestamp.config.constant.SpringProfile;
+import org.mongo.timestamp.scheduler.BufferScheduler;
 import org.mongo.timestamp.scheduler.TimestampScheduler;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -14,5 +15,10 @@ public class WriterConfig {
     @Bean
     public TimestampScheduler timestampScheduler() {
         return new TimestampScheduler();
+    }
+
+    @Bean
+    public BufferScheduler bufferScheduler() {
+        return new BufferScheduler();
     }
 }

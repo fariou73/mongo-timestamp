@@ -6,5 +6,7 @@ services:
                 - 27017:27017
     mongotimestamp:
             image: mongotimestamp:latest
+#            environment:
+#                - JAVA_OPTS=p
             depends_on:
                 - mongodb
