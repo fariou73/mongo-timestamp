@@ -9,3 +9,6 @@ custom:
     pageSize: 20
   message:
     connectionUnreachable: "Соединение с базой данных недоступно"
+logging:
+  level:
+    root: ERROR
