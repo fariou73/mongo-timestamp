@@ -13,3 +13,4 @@ logging:
   level:
     root: ERROR
     org.mongo.timestamp.controller: INFO
+    org.mongo.timestamp.config.listener: INFO
