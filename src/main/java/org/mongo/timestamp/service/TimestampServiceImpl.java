@@ -11,10 +11,9 @@ import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 
 @Service
-@AllArgsConstructor
 public class TimestampServiceImpl implements TimestampService {
-    private final TimestampRepository repository;
-    private final BufferService bufferService;
+    @Autowired private TimestampRepository repository;
+    @Autowired private BufferService bufferService;
 
     @Override
     public Page<Timestamp> getTimestamps(Pageable pageable) {
